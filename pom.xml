@@ -15,7 +15,7 @@
                 <version>2.16</version>
                 <configuration>
                     <includes>
-                        <include>*Suite.class</include>
+                        <include>*Test.class</include>
                     </includes>
                 </configuration>
             </plugin>
