@@ -4,5 +4,5 @@ target/*
 
 #intellij
 .idea/*
-appium-android-calculator.iml
+*.iml
 
