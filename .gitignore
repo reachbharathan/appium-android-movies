@@ -1,0 +1,8 @@
+#java
+*.class
+target/*
+
+#intellij
+.idea/*
+appium-android-calculator.iml
+
