@@ -11,4 +11,9 @@ public class MovieAppTest extends BaseTest {
     movieDetailsScreen.select_rating();
     movieDetailsScreen.save_rating();
   }
+
+  @Test
+  public void simpleSecondTest() {
+    searchScreen.click_first_movie();
+  }
 }

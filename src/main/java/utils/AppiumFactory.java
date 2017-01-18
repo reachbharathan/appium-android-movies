@@ -3,6 +3,8 @@ package utils;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.MalformedURLException;
@@ -15,6 +17,7 @@ import java.util.Properties;
  * Project Name appium-android-calculator
  */
 public class AppiumFactory {
+  private static Logger LOGGER = LogManager.getLogger(AppiumFactory.class);
 
   private static AppiumDriver driver;
   public Properties property;
@@ -32,6 +35,7 @@ public class AppiumFactory {
   }
 
   public void setDriver() {
+    LOGGER.info("Setting up of Android driver");
     DesiredCapabilities capabilities;
     capabilities = new DesiredCapabilities();
     capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, property.getProperty("DEVICE_NAME"));
