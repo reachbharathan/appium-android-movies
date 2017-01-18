@@ -1,5 +1,6 @@
+package utils;
+
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 /**
  * Package name PACKAGE_NAME
@@ -8,12 +9,12 @@ import org.testng.annotations.Test;
  */
 public class SampletTestngTest {
 
-  @Test
+  //  @Test
   public void sampleTestPositive() {
     Assert.assertTrue(true);
   }
 
-  @Test
+  //  @Test
   public void sampleTestNegative() {
     Assert.assertTrue(false);
   }
