@@ -45,6 +45,7 @@ public class AppiumFactory {
 // Movies app
     capabilities.setCapability(MobileCapabilityType.APP, property.getProperty("APP"));
     try {
+      System.out.println("driver getting initialised");
       driver = new AndroidDriver(new URL(property.getProperty("ANDROID_HUB_URL")), capabilities);
       Thread.sleep(10000);
     } catch (MalformedURLException e) {
