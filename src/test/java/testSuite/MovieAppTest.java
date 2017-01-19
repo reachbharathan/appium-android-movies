@@ -6,7 +6,6 @@ public class MovieAppTest extends BaseTestConfiguration {
 
   @Test
   public void verifyAddRatingForMoviesApp() {
-    System.out.println("verifyAddRatingForMoviesApp");
     searchScreen.click_first_movie();
     movieDetailsScreen.click_rate_it();
     movieDetailsScreen.select_rating();
@@ -14,8 +13,8 @@ public class MovieAppTest extends BaseTestConfiguration {
   }
 
   @Test
-  public void simpleSecondTest() {
-    System.out.println("simpleSecondTest");
-    searchScreen.click_first_movie();
+  public void verifySearchMovies() {
+    searchScreen.search_movie("fast");
+    searchScreen.verify_first_movie_title("Fast and Furious");
   }
 }

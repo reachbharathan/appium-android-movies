@@ -2,7 +2,7 @@ package testSuite;
 
 import io.appium.java_client.AppiumDriver;
 import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.core.Logger;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
@@ -27,7 +27,7 @@ public class BaseTestConfiguration {
   public Properties baseTestProperty;
 
   public BaseTestConfiguration() {
-    LogManager.getLogger(BaseTestConfiguration.class);
+    LOGGER=LogManager.getLogger(BaseTestConfiguration.class);
     LOGGER.debug("Base test started");
     this.baseScreen = new BaseScreen();
     this.searchScreen = new SearchScreen();
