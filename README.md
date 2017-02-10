@@ -1,4 +1,4 @@
-# Appium - Movies - Page Object Model
+# Appium - Android - Movies(Sample App) - Page Object Model
 This is a sample project to demonstrate page object model in appium
 
 **testng**is used as test framework.
@@ -42,3 +42,6 @@ Before executing the steps, few installations and setup needs to be completed.
 #### Note
 1. The configuration of android sdk and setting of stimulator will take tie for first times, be patient and refer lots of blog to know and own it
 2. Will increase the test as and when i find time
+
+#### Reference
+This project use bitbar ('https://github.com/bitbar') sample android app for testing purpose, thanks you @bitbar for providing the app.
